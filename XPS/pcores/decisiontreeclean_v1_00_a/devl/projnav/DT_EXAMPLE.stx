@@ -1,0 +1,39 @@
+Release 12.4 - xst M.81d (nt64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/research/DecisionTreeClean/XPS/pcores/decisiontreeclean_v1_00_a/devl/projnav/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Parameter xsthdpdir set to C:/research/DecisionTreeClean/XPS/pcores/decisiontreeclean_v1_00_a/devl/projnav/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/research/DecisionTreeClean/XPS/pcores/decisiontreeclean_v1_00_a/hdl/vhdl/dt_example.vhd" in Library work.
+Entity <dt_example> compiled.
+ERROR:HDLParsers:164 - "C:/research/DecisionTreeClean/XPS/pcores/decisiontreeclean_v1_00_a/hdl/vhdl/dt_example.vhd" Line 49. parse error, unexpected ROW, expecting AFFECT or SEMICOLON
+ERROR:HDLParsers:3312 - "C:/research/DecisionTreeClean/XPS/pcores/decisiontreeclean_v1_00_a/hdl/vhdl/dt_example.vhd" Line 69. Undefined symbol 'reg_addr'.
+ERROR:HDLParsers:1209 - "C:/research/DecisionTreeClean/XPS/pcores/decisiontreeclean_v1_00_a/hdl/vhdl/dt_example.vhd" Line 73. reg_addr: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/research/DecisionTreeClean/XPS/pcores/decisiontreeclean_v1_00_a/hdl/vhdl/dt_example.vhd" Line 134. Undefined symbol 'reg_addr'.
+ERROR:HDLParsers:1209 - "C:/research/DecisionTreeClean/XPS/pcores/decisiontreeclean_v1_00_a/hdl/vhdl/dt_example.vhd" Line 134. reg_addr: Undefined symbol (last report in this block)
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.18 secs
+ 
+--> 
+
+Total memory usage is 200136 kilobytes
+
+Number of errors   :    5 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

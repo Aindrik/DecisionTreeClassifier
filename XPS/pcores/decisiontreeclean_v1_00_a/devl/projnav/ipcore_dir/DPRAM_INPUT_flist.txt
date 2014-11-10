@@ -1,0 +1,16 @@
+# Output products list for <DPRAM_INPUT>
+DPRAM_INPUT.asy
+DPRAM_INPUT.gise
+DPRAM_INPUT.ngc
+DPRAM_INPUT.sym
+DPRAM_INPUT.v
+DPRAM_INPUT.veo
+DPRAM_INPUT.vhd
+DPRAM_INPUT.vho
+DPRAM_INPUT.xco
+DPRAM_INPUT.xise
+DPRAM_INPUT_flist.txt
+DPRAM_INPUT_xmdf.tcl
+_xmsgs\pn_parser.xmsgs
+blk_mem_gen_ds512.pdf
+blk_mem_gen_readme.txt

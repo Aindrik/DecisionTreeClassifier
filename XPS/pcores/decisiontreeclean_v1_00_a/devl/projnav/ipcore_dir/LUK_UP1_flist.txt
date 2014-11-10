@@ -1,0 +1,18 @@
+# Output products list for <LUK_UP1>
+LUK_UP1.asy
+LUK_UP1.gise
+LUK_UP1.mif
+LUK_UP1.ngc
+LUK_UP1.sym
+LUK_UP1.v
+LUK_UP1.veo
+LUK_UP1.vhd
+LUK_UP1.vho
+LUK_UP1.xco
+LUK_UP1.xise
+LUK_UP1_flist.txt
+LUK_UP1_readme.txt
+LUK_UP1_xmdf.tcl
+_xmsgs\pn_parser.xmsgs
+dist_mem_gen_ds322.pdf
+dist_mem_gen_readme.txt

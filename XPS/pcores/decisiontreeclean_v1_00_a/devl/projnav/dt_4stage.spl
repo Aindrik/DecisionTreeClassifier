@@ -1,0 +1,12 @@
+[Inputs]
+clk
+rst
+ram_access
+=d_attributes[3:0]=
+=ram_din[19:0]=
+=ram_addr[3:0]=
+=ram_we[3:0]=
+[Outputs]
+=ram_dout[3:0]=
+=results[3:0]=
+[BiDir]

@@ -1,0 +1,13 @@
+-batch 
+-create decisiontreeclean 
+-ver 1.00.a 
+-dir "C:\research\DecisionTreeClean\XPS" 
+-lang vhdl 
+-bus plbv46 s 
+-isc 1 
+-intrn 1 5 
+-reg 8 
+-mem 3 
+-xps 
+-ise 
+-driver 

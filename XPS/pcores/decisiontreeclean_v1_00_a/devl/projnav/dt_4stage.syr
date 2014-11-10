@@ -1,0 +1,486 @@
+Release 12.4 - xst M.81d (nt64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Reading design: dt_4stage.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "dt_4stage.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "dt_4stage"
+Output Format                      : NGC
+Target Device                      : xc3s1200e-4-fg320
+
+---- Source Options
+Top Module Name                    : dt_4stage
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "ipcore_dir/LUK_UP1.v" in library work
+Module <LUK_UP1> compiled
+No errors in compilation
+Analysis of file <"dt_4stage.prj"> succeeded.
+ 
+Compiling vhdl file "C:/research/DT_FINAL/XPS/pcores/decisiontreeclean_v1_00_a/hdl/vhdl/dt_example_pack.vhd" in Library work.
+Compiling vhdl file "C:/research/DT_FINAL/XPS/pcores/decisiontreeclean_v1_00_a/hdl/vhdl/dt_example.vhd" in Library work.
+Architecture rtl of Entity dt_example is up to date.
+Compiling vhdl file "C:/research/DT_FINAL/XPS/pcores/decisiontreeclean_v1_00_a/hdl/vhdl/dt_4stage.vhd" in Library work.
+Architecture behavioral of Entity dt_4stage is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <dt_4stage> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <DT_EXAMPLE> in library <work> (architecture <rtl>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <dt_4stage> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "C:/research/DT_FINAL/XPS/pcores/decisiontreeclean_v1_00_a/hdl/vhdl/dt_4stage.vhd" line 52: Unconnected output port 'q_level' of component 'DT_EXAMPLE'.
+WARNING:Xst:753 - "C:/research/DT_FINAL/XPS/pcores/decisiontreeclean_v1_00_a/hdl/vhdl/dt_4stage.vhd" line 72: Unconnected output port 'q_level' of component 'DT_EXAMPLE'.
+WARNING:Xst:753 - "C:/research/DT_FINAL/XPS/pcores/decisiontreeclean_v1_00_a/hdl/vhdl/dt_4stage.vhd" line 92: Unconnected output port 'q_level' of component 'DT_EXAMPLE'.
+WARNING:Xst:753 - "C:/research/DT_FINAL/XPS/pcores/decisiontreeclean_v1_00_a/hdl/vhdl/dt_4stage.vhd" line 112: Unconnected output port 'q_level' of component 'DT_EXAMPLE'.
+Entity <dt_4stage> analyzed. Unit <dt_4stage> generated.
+
+Analyzing Entity <DT_EXAMPLE> in library <work> (Architecture <rtl>).
+Entity <DT_EXAMPLE> analyzed. Unit <DT_EXAMPLE> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <DT_EXAMPLE>.
+    Related source file is "C:/research/DT_FINAL/XPS/pcores/decisiontreeclean_v1_00_a/hdl/vhdl/dt_example.vhd".
+    Found 4-bit register for signal <q_addr>.
+    Found 32-bit register for signal <q_attributes>.
+    Found 2-bit register for signal <q_level>.
+    Found 8-bit comparator greater for signal <q_addr$cmp_gt0000> created at line 128.
+    Found 8-bit comparator lessequal for signal <q_addr$cmp_le0000> created at line 122.
+    Found 2-bit adder for signal <q_level$add0000> created at line 138.
+    Found 4-bit register for signal <reg_addr>.
+    Found 32-bit register for signal <reg_attributes>.
+    Found 2-bit register for signal <reg_level>.
+    Found 8-bit 4-to-1 multiplexer for signal <selected_attr>.
+    Summary:
+	inferred  76 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+	inferred   8 Multiplexer(s).
+Unit <DT_EXAMPLE> synthesized.
+
+
+Synthesizing Unit <dt_4stage>.
+    Related source file is "C:/research/DT_FINAL/XPS/pcores/decisiontreeclean_v1_00_a/hdl/vhdl/dt_4stage.vhd".
+WARNING:Xst:646 - Signal <s4_attributes> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <dt_4stage> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 4
+ 2-bit adder                                           : 4
+# Registers                                            : 48
+ 2-bit register                                        : 8
+ 4-bit register                                        : 8
+ 8-bit register                                        : 32
+# Comparators                                          : 8
+ 8-bit comparator greater                              : 4
+ 8-bit comparator lessequal                            : 4
+# Multiplexers                                         : 4
+ 8-bit 4-to-1 multiplexer                              : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/LUK_UP1.ngc>.
+Loading core <LUK_UP1> for timing and area information for instance <COEF_MEM>.
+WARNING:Xst:1293 - FF/Latch <reg_addr_0> has a constant value of 0 in block <STAGE_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <reg_addr_1> has a constant value of 0 in block <STAGE_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <reg_addr_2> has a constant value of 0 in block <STAGE_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <reg_addr_3> has a constant value of 0 in block <STAGE_1>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 4
+ 2-bit adder                                           : 4
+# Registers                                            : 304
+ Flip-Flops                                            : 304
+# Comparators                                          : 8
+ 8-bit comparator greater                              : 4
+ 8-bit comparator lessequal                            : 4
+# Multiplexers                                         : 32
+ 1-bit 4-to-1 multiplexer                              : 32
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <dt_4stage> ...
+
+Optimizing unit <DT_EXAMPLE> ...
+WARNING:Xst:1293 - FF/Latch <STAGE_1/reg_addr_3> has a constant value of 0 in block <dt_4stage>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <STAGE_1/reg_addr_2> has a constant value of 0 in block <dt_4stage>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <STAGE_1/reg_addr_1> has a constant value of 0 in block <dt_4stage>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <STAGE_1/reg_addr_0> has a constant value of 0 in block <dt_4stage>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <STAGE_4/q_level_1> of sequential type is unconnected in block <dt_4stage>.
+WARNING:Xst:2677 - Node <STAGE_4/q_level_0> of sequential type is unconnected in block <dt_4stage>.
+WARNING:Xst:2677 - Node <STAGE_4/q_attributes_3_7> of sequential type is unconnected in block <dt_4stage>.
+WARNING:Xst:2677 - Node <STAGE_4/q_attributes_3_6> of sequential type is unconnected in block <dt_4stage>.
+WARNING:Xst:2677 - Node <STAGE_4/q_attributes_3_5> of sequential type is unconnected in block <dt_4stage>.
+WARNING:Xst:2677 - Node <STAGE_4/q_attributes_3_4> of sequential type is unconnected in block <dt_4stage>.
+WARNING:Xst:2677 - Node <STAGE_4/q_attributes_3_3> of sequential type is unconnected in block <dt_4stage>.
+WARNING:Xst:2677 - Node <STAGE_4/q_attributes_3_2> of sequential type is unconnected in block <dt_4stage>.
+WARNING:Xst:2677 - Node <STAGE_4/q_attributes_3_1> of sequential type is unconnected in block <dt_4stage>.
+WARNING:Xst:2677 - Node <STAGE_4/q_attributes_3_0> of sequential type is unconnected in block <dt_4stage>.
+WARNING:Xst:2677 - Node <STAGE_4/q_attributes_2_7> of sequential type is unconnected in block <dt_4stage>.
+WARNING:Xst:2677 - Node <STAGE_4/q_attributes_2_6> of sequential type is unconnected in block <dt_4stage>.
+WARNING:Xst:2677 - Node <STAGE_4/q_attributes_2_5> of sequential type is unconnected in block <dt_4stage>.
+WARNING:Xst:2677 - Node <STAGE_4/q_attributes_2_4> of sequential type is unconnected in block <dt_4stage>.
+WARNING:Xst:2677 - Node <STAGE_4/q_attributes_2_3> of sequential type is unconnected in block <dt_4stage>.
+WARNING:Xst:2677 - Node <STAGE_4/q_attributes_2_2> of sequential type is unconnected in block <dt_4stage>.
+WARNING:Xst:2677 - Node <STAGE_4/q_attributes_2_1> of sequential type is unconnected in block <dt_4stage>.
+WARNING:Xst:2677 - Node <STAGE_4/q_attributes_2_0> of sequential type is unconnected in block <dt_4stage>.
+WARNING:Xst:2677 - Node <STAGE_4/q_attributes_1_7> of sequential type is unconnected in block <dt_4stage>.
+WARNING:Xst:2677 - Node <STAGE_4/q_attributes_1_6> of sequential type is unconnected in block <dt_4stage>.
+WARNING:Xst:2677 - Node <STAGE_4/q_attributes_1_5> of sequential type is unconnected in block <dt_4stage>.
+WARNING:Xst:2677 - Node <STAGE_4/q_attributes_1_4> of sequential type is unconnected in block <dt_4stage>.
+WARNING:Xst:2677 - Node <STAGE_4/q_attributes_1_3> of sequential type is unconnected in block <dt_4stage>.
+WARNING:Xst:2677 - Node <STAGE_4/q_attributes_1_2> of sequential type is unconnected in block <dt_4stage>.
+WARNING:Xst:2677 - Node <STAGE_4/q_attributes_1_1> of sequential type is unconnected in block <dt_4stage>.
+WARNING:Xst:2677 - Node <STAGE_4/q_attributes_1_0> of sequential type is unconnected in block <dt_4stage>.
+WARNING:Xst:2677 - Node <STAGE_4/q_attributes_0_7> of sequential type is unconnected in block <dt_4stage>.
+WARNING:Xst:2677 - Node <STAGE_4/q_attributes_0_6> of sequential type is unconnected in block <dt_4stage>.
+WARNING:Xst:2677 - Node <STAGE_4/q_attributes_0_5> of sequential type is unconnected in block <dt_4stage>.
+WARNING:Xst:2677 - Node <STAGE_4/q_attributes_0_4> of sequential type is unconnected in block <dt_4stage>.
+WARNING:Xst:2677 - Node <STAGE_4/q_attributes_0_3> of sequential type is unconnected in block <dt_4stage>.
+WARNING:Xst:2677 - Node <STAGE_4/q_attributes_0_2> of sequential type is unconnected in block <dt_4stage>.
+WARNING:Xst:2677 - Node <STAGE_4/q_attributes_0_1> of sequential type is unconnected in block <dt_4stage>.
+WARNING:Xst:2677 - Node <STAGE_4/q_attributes_0_0> of sequential type is unconnected in block <dt_4stage>.
+WARNING:Xst:2677 - Node <STAGE_4/reg_level_1> of sequential type is unconnected in block <dt_4stage>.
+WARNING:Xst:2677 - Node <STAGE_4/reg_level_0> of sequential type is unconnected in block <dt_4stage>.
+WARNING:Xst:2677 - Node <STAGE_3/q_level_1> of sequential type is unconnected in block <dt_4stage>.
+WARNING:Xst:2677 - Node <STAGE_3/q_level_0> of sequential type is unconnected in block <dt_4stage>.
+WARNING:Xst:2677 - Node <STAGE_3/reg_level_1> of sequential type is unconnected in block <dt_4stage>.
+WARNING:Xst:2677 - Node <STAGE_3/reg_level_0> of sequential type is unconnected in block <dt_4stage>.
+WARNING:Xst:2677 - Node <STAGE_2/q_level_1> of sequential type is unconnected in block <dt_4stage>.
+WARNING:Xst:2677 - Node <STAGE_2/q_level_0> of sequential type is unconnected in block <dt_4stage>.
+WARNING:Xst:2677 - Node <STAGE_2/reg_level_1> of sequential type is unconnected in block <dt_4stage>.
+WARNING:Xst:2677 - Node <STAGE_2/reg_level_0> of sequential type is unconnected in block <dt_4stage>.
+WARNING:Xst:2677 - Node <STAGE_1/q_level_1> of sequential type is unconnected in block <dt_4stage>.
+WARNING:Xst:2677 - Node <STAGE_1/q_level_0> of sequential type is unconnected in block <dt_4stage>.
+WARNING:Xst:2677 - Node <STAGE_1/reg_level_1> of sequential type is unconnected in block <dt_4stage>.
+WARNING:Xst:2677 - Node <STAGE_1/reg_level_0> of sequential type is unconnected in block <dt_4stage>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block dt_4stage, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 252
+ Flip-Flops                                            : 252
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : dt_4stage.ngr
+Top Level Output File Name         : dt_4stage
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 147
+
+Cell Usage :
+# BELS                             : 205
+#      GND                         : 8
+#      LUT2                        : 4
+#      LUT3                        : 92
+#      LUT3_L                      : 16
+#      LUT4                        : 48
+#      MUXCY                       : 32
+#      VCC                         : 5
+# FlipFlops/Latches                : 332
+#      FDE                         : 80
+#      FDR                         : 252
+# RAMS                             : 80
+#      RAM16X1S                    : 80
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 146
+#      IBUF                        : 62
+#      OBUF                        : 84
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1200efg320-4 
+
+ Number of Slices:                      205  out of   8672     2%  
+ Number of Slice Flip Flops:            332  out of  17344     1%  
+ Number of 4 input LUTs:                240  out of  17344     1%  
+    Number used as logic:               160
+    Number used as RAMs:                 80
+ Number of IOs:                         147
+ Number of bonded IOBs:                 147  out of    250    58%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 412   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 6.420ns (Maximum Frequency: 155.763MHz)
+   Minimum input arrival time before clock: 6.349ns
+   Maximum output required time after clock: 4.914ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 6.420ns (frequency: 155.763MHz)
+  Total number of paths / destination ports: 2028 / 540
+-------------------------------------------------------------------------
+Delay:               6.420ns (Levels of Logic = 12)
+  Source:            STAGE_4/COEF_MEM/BU2/U0/gen_sp_ram.spram_inst/qspo_int_8 (FF)
+  Destination:       STAGE_4/q_addr_3 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: STAGE_4/COEF_MEM/BU2/U0/gen_sp_ram.spram_inst/qspo_int_8 to STAGE_4/q_addr_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             17   0.591   1.086  U0/gen_sp_ram.spram_inst/qspo_int_8 (qspo(8))
+     end scope: 'BU2'
+     end scope: 'STAGE_4/COEF_MEM'
+     LUT3:I2->O            1   0.704   0.455  STAGE_4/mux_3 (STAGE_4/mux_3)
+     LUT4:I2->O            1   0.704   0.000  STAGE_4/Mcompar_q_addr_cmp_le0000_lut<0> (STAGE_4/Mcompar_q_addr_cmp_le0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  STAGE_4/Mcompar_q_addr_cmp_le0000_cy<0> (STAGE_4/Mcompar_q_addr_cmp_le0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  STAGE_4/Mcompar_q_addr_cmp_le0000_cy<1> (STAGE_4/Mcompar_q_addr_cmp_le0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  STAGE_4/Mcompar_q_addr_cmp_le0000_cy<2> (STAGE_4/Mcompar_q_addr_cmp_le0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  STAGE_4/Mcompar_q_addr_cmp_le0000_cy<3> (STAGE_4/Mcompar_q_addr_cmp_le0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  STAGE_4/Mcompar_q_addr_cmp_le0000_cy<4> (STAGE_4/Mcompar_q_addr_cmp_le0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  STAGE_4/Mcompar_q_addr_cmp_le0000_cy<5> (STAGE_4/Mcompar_q_addr_cmp_le0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  STAGE_4/Mcompar_q_addr_cmp_le0000_cy<6> (STAGE_4/Mcompar_q_addr_cmp_le0000_cy<6>)
+     MUXCY:CI->O           4   0.459   0.591  STAGE_4/Mcompar_q_addr_cmp_le0000_cy<7> (STAGE_4/q_addr_cmp_le0000)
+     LUT4:I3->O            1   0.704   0.000  STAGE_4/q_addr_mux0003<3> (STAGE_4/q_addr_mux0003<3>)
+     FDR:D                     0.308          STAGE_4/q_addr_3
+    ----------------------------------------
+    Total                      6.420ns (4.288ns logic, 2.132ns route)
+                                       (66.8% logic, 33.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 1724 / 844
+-------------------------------------------------------------------------
+Offset:              6.349ns (Levels of Logic = 4)
+  Source:            ram_access (PAD)
+  Destination:       STAGE_1/COEF_MEM/BU2/U0/gen_sp_ram.spram_inst/qspo_int_19 (FF)
+  Destination Clock: clk rising
+
+  Data Path: ram_access to STAGE_1/COEF_MEM/BU2/U0/gen_sp_ram.spram_inst/qspo_int_19
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   1.218   1.209  ram_access_IBUF (ram_access_IBUF)
+     LUT2:I0->O           40   0.704   1.265  STAGE_1/coef_addr<3>1 (STAGE_1/coef_addr<3>)
+     begin scope: 'STAGE_1/COEF_MEM'
+     begin scope: 'BU2'
+     RAM16X1S:A3->O        1   1.225   0.420  U0/gen_sp_ram.spram_inst/Mram_ram20 (U0/gen_sp_ram.spram_inst/spo_int<19>)
+     FDE:D                     0.308          U0/gen_sp_ram.spram_inst/qspo_int_19
+    ----------------------------------------
+    Total                      6.349ns (3.455ns logic, 2.894ns route)
+                                       (54.4% logic, 45.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 84 / 84
+-------------------------------------------------------------------------
+Offset:              4.914ns (Levels of Logic = 2)
+  Source:            STAGE_4/COEF_MEM/BU2/U0/gen_sp_ram.spram_inst/qspo_int_8 (FF)
+  Destination:       ram_dout<3><8> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: STAGE_4/COEF_MEM/BU2/U0/gen_sp_ram.spram_inst/qspo_int_8 to ram_dout<3><8>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             17   0.591   1.051  U0/gen_sp_ram.spram_inst/qspo_int_8 (qspo(8))
+     end scope: 'BU2'
+     end scope: 'STAGE_4/COEF_MEM'
+     OBUF:I->O                 3.272          ram_dout_3__8_OBUF (ram_dout<3><8>)
+    ----------------------------------------
+    Total                      4.914ns (3.863ns logic, 1.051ns route)
+                                       (78.6% logic, 21.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.76 secs
+ 
+--> 
+
+Total memory usage is 267560 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   61 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

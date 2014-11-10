@@ -1,0 +1,5 @@
+set -tmpdir "C:/research/DecisionTreeClean/XPS/pcores/decisiontreeclean_v1_00_a/devl/projnav/xst/projnav.tmp"
+set -xsthdpdir "C:/research/DecisionTreeClean/XPS/pcores/decisiontreeclean_v1_00_a/devl/projnav/xst"
+elaborate
+-ifn DT_EXAMPLE.prj
+-ifmt mixed

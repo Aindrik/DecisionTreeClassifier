@@ -1,0 +1,22 @@
+##############################################################################
+## Filename:          C:\research\DT_FINAL\XPS\pcores/decisiontreeclean_v1_00_a/data/decisiontreeclean_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Thu Jun 07 12:02:19 2012 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib decisiontreeclean_v1_00_a dt_example_pack vhdl
+lib proc_common_v3_00_a proc_common_pkg vhdl
+lib proc_common_v3_00_a or_muxcy vhdl
+lib proc_common_v3_00_a family_support vhdl
+lib proc_common_v3_00_a pselect_f vhdl
+lib proc_common_v3_00_a or_gate128 vhdl
+lib proc_common_v3_00_a ipif_pkg vhdl
+lib proc_common_v3_00_a counter_f vhdl
+lib plbv46_slave_single_v1_01_a plb_address_decoder vhdl
+lib decisiontreeclean_v1_00_a dt_example vhdl
+lib plbv46_slave_single_v1_01_a plb_slave_attachment vhdl
+lib decisiontreeclean_v1_00_a dt_4stage vhdl
+lib plbv46_slave_single_v1_01_a plbv46_slave_single vhdl
+lib interrupt_control_v2_01_a interrupt_control vhdl
+lib decisiontreeclean_v1_00_a user_logic vhdl
+lib decisiontreeclean_v1_00_a decisiontreeclean vhdl

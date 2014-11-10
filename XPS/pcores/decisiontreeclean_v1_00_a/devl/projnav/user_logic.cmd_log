@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/research/DT_FINAL/XPS/pcores/decisiontreeclean_v1_00_a/devl/projnav/user_logic.xst" -ofn "C:/research/DT_FINAL/XPS/pcores/decisiontreeclean_v1_00_a/devl/projnav/user_logic.syr" 
+xst -intstyle ise -ifn "C:/Users/user/Documents/research/DT_FINAL/XPS/pcores/decisiontreeclean_v1_00_a/devl/projnav/user_logic.xst" -ofn "C:/Users/user/Documents/research/DT_FINAL/XPS/pcores/decisiontreeclean_v1_00_a/devl/projnav/user_logic.syr" 

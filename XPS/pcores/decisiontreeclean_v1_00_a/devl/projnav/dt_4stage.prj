@@ -1,0 +1,4 @@
+verilog work "ipcore_dir/LUK_UP1.v"
+vhdl work "../../hdl/vhdl/dt_example_pack.vhd"
+vhdl work "../../hdl/vhdl/dt_example.vhd"
+vhdl work "../../hdl/vhdl/dt_4stage.vhd"

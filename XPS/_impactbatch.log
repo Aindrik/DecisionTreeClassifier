@@ -1,0 +1,42 @@
+iMPACT Version: Nov 18 2010 22:29:46
+
+iMPACT log file Started on Thu May 10 15:31:01 2012
+
+Preference Table
+Name                 Setting             
+StartupClock         Auto_Correction     
+AutoSignature        False               
+KeepSVF              False               
+ConcurrentMode       False               
+UseHighz             False               
+ConfigOnFailure      Stop                
+UserLevel            Novice              
+MessageLevel         Detailed            
+svfUseTime           false               
+SpiByteSwap          Auto_Correction     
+AutoInfer            false               
+SvfPlayDisplayComments false               
+AutoDetecting cable. Please wait.
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+ Driver file xusb_xup.sys found.
+ Driver version: src=1027, dest=1027.
+ Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2007 Build Date: Feb 28 2007 x86_64 64bit SYS09:48:01, version = 811.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT1).
+Checking cable driver.
+ Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2007 Build Date: Feb 28 2007 x86_64 64bit SYS09:48:01, version = 811.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT2).
+Checking cable driver.
+ Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2007 Build Date: Feb 28 2007 x86_64 64bit SYS09:48:01, version = 811.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT3).
+Checking cable driver.
+ Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2007 Build Date: Feb 28 2007 x86_64 64bit SYS09:48:01, version = 811.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT4).
+Checking cable driver.
+ Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2007 Build Date: Feb 28 2007 x86_64 64bit SYS09:48:01, version = 811.
+Cable connection failed.
+Cable autodetection failed.

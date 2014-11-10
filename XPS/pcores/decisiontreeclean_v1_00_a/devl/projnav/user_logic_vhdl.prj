@@ -1,0 +1,5 @@
+vhdl work "C:\Users\user\Documents\research\DT_FINAL\XPS\pcores\decisiontreeclean_v1_00_a\hdl\vhdl\dt_example_pack.vhd"
+vhdl work "C:\Users\user\Documents\research\DT_FINAL\XPS\pcores\decisiontreeclean_v1_00_a\hdl\vhdl\dt_example.vhd"
+vhdl proc_common_v3_00_a "C:\Xilinx\12.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\proc_common_v3_00_a\hdl\vhdl\proc_common_pkg.vhd"
+vhdl work "C:\Users\user\Documents\research\DT_FINAL\XPS\pcores\decisiontreeclean_v1_00_a\hdl\vhdl\dt_4stage.vhd"
+vhdl decisiontreeclean_v1_00_a "C:\Users\user\Documents\research\DT_FINAL\XPS\pcores\decisiontreeclean_v1_00_a\hdl\vhdl\user_logic.vhd"

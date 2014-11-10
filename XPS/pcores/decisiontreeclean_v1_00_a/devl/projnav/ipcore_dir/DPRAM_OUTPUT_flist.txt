@@ -1,0 +1,16 @@
+# Output products list for <DPRAM_OUTPUT>
+DPRAM_OUTPUT.asy
+DPRAM_OUTPUT.gise
+DPRAM_OUTPUT.ngc
+DPRAM_OUTPUT.sym
+DPRAM_OUTPUT.v
+DPRAM_OUTPUT.veo
+DPRAM_OUTPUT.vhd
+DPRAM_OUTPUT.vho
+DPRAM_OUTPUT.xco
+DPRAM_OUTPUT.xise
+DPRAM_OUTPUT_flist.txt
+DPRAM_OUTPUT_xmdf.tcl
+_xmsgs\pn_parser.xmsgs
+blk_mem_gen_ds512.pdf
+blk_mem_gen_readme.txt

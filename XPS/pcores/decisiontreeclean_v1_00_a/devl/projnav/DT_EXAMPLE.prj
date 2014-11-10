@@ -1,0 +1,2 @@
+vhdl decisiontreeclean_v1_00_a "../../hdl/vhdl/dt_example_pack.vhd"
+vhdl work "../../hdl/vhdl/dt_example.vhd"

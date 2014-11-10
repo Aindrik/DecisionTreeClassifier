@@ -1,0 +1,8 @@
+verilog work "ipcore_dir/LUK_UP1.v"
+vhdl work "../../hdl/vhdl/dt_example_pack.vhd"
+vhdl work "../../hdl/vhdl/dt_example.vhd"
+vhdl proc_common_v3_00_a "../../../../../../../../../../Xilinx/12.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd"
+vhdl work "../../hdl/vhdl/dt_4stage.vhd"
+verilog work "ipcore_dir/DPRAM_OUTPUT.v"
+verilog work "ipcore_dir/DPRAM_INPUT.v"
+vhdl decisiontreeclean_v1_00_a "../../hdl/vhdl/user_logic.vhd"

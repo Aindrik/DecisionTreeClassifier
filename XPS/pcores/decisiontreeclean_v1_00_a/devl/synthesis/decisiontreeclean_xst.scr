@@ -1,0 +1,12 @@
+run
+-opt_level 2
+-opt_mode speed
+-ifmt mixed
+-ifn "C:\research\DecisionTreeClean\XPS\pcores\decisiontreeclean_v1_00_a\devl\synthesis\decisiontreeclean_xst.prj"
+-top decisiontreeclean
+-p virtex5
+-ofn "C:\research\DecisionTreeClean\XPS\pcores\decisiontreeclean_v1_00_a\devl\synthesis\decisiontreeclean_xst.ngc"
+-iobuf NO
+-rtlview YES
+-hierarchy_separator /
+-work_lib decisiontreeclean_v1_00_a
